@@ -57,11 +57,6 @@ for i in range(gl):
         if mines > 0:
             grid[i][j] = str(mines)
 
-for i in range(gl):
-    for j in range(gw):
-        print(grid[i][j], end='')
-    print()
-
 # Play the game.
 def recursivereveal(grid, revealed, ri, rj):
     revealed.append([ri, rj])
